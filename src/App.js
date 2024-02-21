@@ -1,41 +1,21 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import SobreMi from './pages/SobreMi';
-import Proyectos from './pages/Proyectos.js'
-import Expeciencia from './pages/Experiencia'
+import Proyectos from './pages/Proyectos.js';
+import Experiencia from './pages/Experiencia';
 import Contactame from "./pages/Contactame.js";
 
 function App() {
-  const routes = [
-    {
-      path: "/",
-      element: <Home />,
-    },
-    {
-      path: "/sobre-mi",
-      element: <SobreMi />,
-    },
-    {
-      path: "/proyectos",
-      element: <Proyectos />,
-    },
-    {
-      path: "/experiencias",
-      element: <Expeciencia />,
-    },
-    {
-      path: "/contactame",
-      element: <Contactame />,
-    },
-  ];
-
-  const router = createBrowserRouter({
-    basename: '/portafolio',
-    routes: routes // Aquí pasamos las rutas
-  });
-
   return (
-      <RouterProvider router={router} />
+    <Router basename="/portafolio">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobre-mi" element={<SobreMi />} />
+        <Route path="/proyectos" element={<Proyectos />} />
+        <Route path="/experiencias" element={<Experiencia />} />
+        <Route path="/contactame" element={<Contactame />} />
+      </Routes>
+    </Router>
   );
 }
 
