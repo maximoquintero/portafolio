@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portafolio/build/static/css/main.5e35d7af.css",
+    "main.js": "/portafolio/build/static/js/main.aee0f3a4.js",
+    "static/js/453.7d1ffe6d.chunk.js": "/portafolio/build/static/js/453.7d1ffe6d.chunk.js",
+    "static/media/nutriapp.png": "/portafolio/build/static/media/nutriapp.8f9301b2499dc8b9626b.png",
+    "static/media/miFoto.jpeg": "/portafolio/build/static/media/miFoto.4f9e49bd17c167eecf21.jpeg",
+    "static/media/medicamentos.png": "/portafolio/build/static/media/medicamentos.3ce0290a02456cf26743.png",
+    "static/media/taller.png": "/portafolio/build/static/media/taller.bb65ed2541d9eb6dba1a.png",
+    "index.html": "/portafolio/build/index.html",
+    "main.5e35d7af.css.map": "/portafolio/build/static/css/main.5e35d7af.css.map",
+    "main.aee0f3a4.js.map": "/portafolio/build/static/js/main.aee0f3a4.js.map",
+    "453.7d1ffe6d.chunk.js.map": "/portafolio/build/static/js/453.7d1ffe6d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e35d7af.css",
+    "static/js/main.aee0f3a4.js"
+  ]
+}
