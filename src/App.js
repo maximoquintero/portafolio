@@ -6,28 +6,31 @@ import Expeciencia from './pages/Experiencia'
 import Contactame from "./pages/Contactame.js";
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />,
-    },
-    {
-      path: "/sobre-mi",
-      element: <SobreMi />,
-    },
-    {
-      path: "/proyectos",
-      element: <Proyectos />,
-    },
-    {
-      path: "/experiencias",
-      element: <Expeciencia />,
-    },
-    {
-      path: "/contactame",
-      element: <Contactame />,
-    },
-  ]);
+  const router = createBrowserRouter({
+    basename: '/portafolio', // Esta es la parte que debes agregar
+    routes: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/sobre-mi",
+        element: <SobreMi />,
+      },
+      {
+        path: "/proyectos",
+        element: <Proyectos />,
+      },
+      {
+        path: "/experiencias",
+        element: <Expeciencia />,
+      },
+      {
+        path: "/contactame",
+        element: <Contactame />,
+      },
+    ]
+  });
 
   return (
       <RouterProvider router={router} />
